@@ -25,6 +25,7 @@ dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
     compile "org.jetbrains.ktor:ktor-netty:$ktor_version"
     compile "ch.qos.logback:logback-classic:1.2.1"
+    compile "org.jetbrains.ktor:ktor-gson:$ktor_version"
 }
 
 compileKotlin {
