@@ -3,6 +3,7 @@ version '1.0-SNAPSHOT'
 
 buildscript {
     ext.kotlin_version = '1.1.4-2'
+    ext.ktor_version = '0.4.0'
 
     repositories {
         mavenCentral()
@@ -16,10 +17,14 @@ apply plugin: 'kotlin'
 
 repositories {
     mavenCentral()
+    maven { url "https://dl.bintray.com/kotlin/kotlinx" }
+    maven { url "https://dl.bintray.com/kotlin/ktor" }
 }
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
+    compile "org.jetbrains.ktor:ktor-netty:$ktor_version"
+    compile "ch.qos.logback:logback-classic:1.2.1"
 }
 
 compileKotlin {
